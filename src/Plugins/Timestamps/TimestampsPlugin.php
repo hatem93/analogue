@@ -22,7 +22,7 @@ class TimestampsPlugin extends AnaloguePlugin
             // Cross Compatible Event handling with 5.3
             // TODO : find a replacement event handler
             if (is_null($payload)) {
-                $mapper = $event;
+                $mapper = $event->mapper;
             } else {
                 $mapper = $payload[0]->mapper;
             }
